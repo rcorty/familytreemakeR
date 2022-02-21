@@ -5,24 +5,24 @@
 \title{Core Functions}
 \usage{
 new_family_tree(
-  fn = NULL,
-  ln = NULL,
+  first_name = NULL,
+  last_name = NULL,
   sex = NULL,
-  nn = NULL,
-  yob = NULL,
+  nick_name = NULL,
+  year_of_birth = NULL,
   note = NULL
 )
 }
 \arguments{
-\item{fn}{first name}
+\item{first_name}{first name}
 
-\item{ln}{last name}
+\item{last_name}{last name}
 
 \item{sex}{sex}
 
-\item{nn}{nick name or alternate name}
+\item{nick_name}{nick name or alternate name}
 
-\item{yob}{year of birth}
+\item{year_of_birth}{year of birth}
 
 \item{note}{other notes about a person}
 }
@@ -33,7 +33,8 @@ a new family tree with one person
 Core Functions
 }
 \examples{
-new_family_tree(fn = 'Abraham', ln = 'Lincoln')
-new_family_tree(fn = 'Abraham', ln = 'Lincoln', nn = 'Honest Abe', yob = 1809)
+new_family_tree(first_name = 'Abraham', last_name = 'Lincoln')
+new_family_tree(first_name = 'Abraham', last_name = 'Lincoln',
+                nick_name = 'Honest Abe', year_of_birth = 1809)
 
 }
