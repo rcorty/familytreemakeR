@@ -4,18 +4,36 @@
 \alias{new_family_tree}
 \title{Core Functions}
 \usage{
-new_family_tree(tree_name = "my new tree")
+new_family_tree(
+  fn = NULL,
+  ln = NULL,
+  sex = NULL,
+  nn = NULL,
+  yob = NULL,
+  note = NULL
+)
 }
 \arguments{
-\item{tree_name}{a name for the tree to be created,
-e.g. 'The Wallace Family'}
+\item{fn}{first name}
+
+\item{ln}{last name}
+
+\item{sex}{sex}
+
+\item{nn}{nick name or alternate name}
+
+\item{yob}{year of birth}
+
+\item{note}{other notes about a person}
 }
 \value{
-a new tree
+a new family tree with one person
 }
 \description{
 Core Functions
 }
 \examples{
-new_family_tree(tree_name = 'The Wallace Family')
+new_family_tree(fn = 'Abraham', ln = 'Lincoln')
+new_family_tree(fn = 'Abraham', ln = 'Lincoln', nn = 'Honest Abe', yob = 1809)
+
 }
