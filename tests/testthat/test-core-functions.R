@@ -3,10 +3,10 @@ test_that(
 	code =
 		{
 			# not enough input
-			expect_error(new_family_tree())
+			expect_error(there_was())
 
 			# minimal sufficient input
-			tree1 <- new_family_tree(first_name = 'Abraham', last_name = 'Lincoln')
+			tree1 <- there_was(first_name = 'Abraham', last_name = 'Lincoln')
 			expect_s3_class(
 				object = tree1,
 				class = c('family_tree', 'dag', 'igraph'),
@@ -22,7 +22,7 @@ test_that(
 			)
 
 			# more input
-			tree2 <-  new_family_tree(first_name = 'Abraham', last_name = 'Lincoln',
+			tree2 <-  there_was(first_name = 'Abraham', last_name = 'Lincoln',
 																nick_name = 'Honest Abe', year_of_birth = 1809)
 			expect_s3_class(
 				object = tree2,

@@ -11,11 +11,11 @@
 #'
 #' @export
 #' @examples
-#' new_family_tree(first_name = 'Abraham', last_name = 'Lincoln')
-#' new_family_tree(first_name = 'Abraham', last_name = 'Lincoln',
+#' there_was(first_name = 'Abraham', last_name = 'Lincoln')
+#' there_was(first_name = 'Abraham', last_name = 'Lincoln',
 #'                 nick_name = 'Honest Abe', year_of_birth = 1809)
 #'
-new_family_tree <- function(
+there_was <- function(
 	first_name = NULL,
 	last_name = NULL,
 	sex = NULL,
@@ -41,3 +41,6 @@ new_family_tree <- function(
 }
 
 
+# add_son <- function(first_name = NULL, last_name = NULL) {
+#
+# }
