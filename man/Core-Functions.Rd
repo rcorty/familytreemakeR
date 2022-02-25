@@ -2,9 +2,21 @@
 % Please edit documentation in R/core-functions.R
 \name{there_was}
 \alias{there_was}
+\alias{who_had_a}
 \title{Core Functions}
 \usage{
 there_was(
+  first_name = NULL,
+  last_name = NULL,
+  sex = NULL,
+  nick_name = NULL,
+  year_of_birth = NULL,
+  note = NULL
+)
+
+who_had_a(
+  family_tree,
+  what,
   first_name = NULL,
   last_name = NULL,
   sex = NULL,
@@ -25,9 +37,15 @@ there_was(
 \item{year_of_birth}{year of birth}
 
 \item{note}{other notes about a person}
+
+\item{family_tree}{the tree to add to}
+
+\item{what}{what to add (spouse, child, parent, or sibling)}
 }
 \value{
 a new family tree with one person
+
+
 }
 \description{
 Core Functions
@@ -36,5 +54,8 @@ Core Functions
 there_was(first_name = 'Abraham', last_name = 'Lincoln')
 there_was(first_name = 'Abraham', last_name = 'Lincoln',
                 nick_name = 'Honest Abe', year_of_birth = 1809)
+
+there_was('Abraham', 'Lincoln') \%>\%
+    who_had_a('spouse', 'Mary', 'Lincoln')
 
 }

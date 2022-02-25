@@ -2,4 +2,5 @@
 
 export("%>%")
 export(there_was)
+export(who_had_a)
 importFrom(magrittr,"%>%")

@@ -22,4 +22,5 @@ Suggests:
 Config/testthat/edition: 3
 Imports: 
     magrittr,
-    igraph
+    igraph,
+    methods
